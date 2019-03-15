@@ -1,2 +1,2 @@
 # SimpleBlogWebsite
-Simple Blog website build using Flask
+A simple Blog website build while learning Flask.
