@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first app</title>
+</head>
+
+<body>
+    <h1> {{blog['name']}} </h1>
+    <p>Welcome to my blog</p>
+    <ul>
+        {% for post_id,post in blog['posts'].items() %}
+            <li><a href="{{ url_for('post',post_id=post_id) }}"> {{ post['title'] }} </a></li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
